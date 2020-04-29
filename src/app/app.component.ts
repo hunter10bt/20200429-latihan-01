@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +8,45 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  constructor (private router:Router){
+
+  }
+
+  str : String= "";
+
+  add7(){
+    this.str = this.str + "7";
+  }
+
+  add8(){
+    this.str = this.str + "8";
+  }
+
+  add9(){
+    this.str = this.str + "9";
+  }
+
+  add4(){
+    this.str = this.str + "4";
+  }
+
+  add5(){
+    this.str = this.str + "5";
+  }
+
+  add6(){
+    this.str = this.str + "6";
+  }
+
+  add1(){
+    this.str = this.str + "1";
+  }
+
+  add2(){
+    this.str = this.str + "2";
+  }
+
+  add3(){
+    this.str = this.str + "3";
+  }
 }
