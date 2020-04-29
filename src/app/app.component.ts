@@ -8,6 +8,7 @@ import { Router} from '@angular/router';
 })
 export class AppComponent  {
   name = 'Angular';
+  operator = "";
   constructor (private router:Router){
 
   }
@@ -49,4 +50,19 @@ export class AppComponent  {
   add3(){
     this.str = this.str + "3";
   }
+
+  addMin() {
+    this.str = this.str + "-";
+    this.operator = "-";
+  }
+  addPlus() {
+    this.str = this.str + "+";
+    this.operator = "+";
+  }
+  addMul() {
+    this.str = this.str + "*";
+    this.operator = "*";
+  }
+
+  
 }
